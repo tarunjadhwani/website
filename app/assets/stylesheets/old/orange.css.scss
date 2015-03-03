@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;
+  font-family: 'Share Tech', sans-serif;
+  background: #ffa84c;
+  background: -moz-radial-gradient(center, ellipse cover,  #ffa84c 0%, #ff7b0d 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d));
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffa84c 0%,#ff7b0d 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #ffa84c 0%,#ff7b0d 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #ffa84c 0%,#ff7b0d 100%);
+  background: radial-gradient(ellipse at center,  #ffa84c 0%,#ff7b0d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 );
+}
+
+#warp {
+  display: table;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+
+}
+
+#inner-warp {
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+#button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0 0 0 0;
+  text-align: center;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #8fc400;
+  background: -moz-linear-gradient(top,  #8fc400 0%, #82b200 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8fc400), color-stop(100%,#82b200));
+  background: -webkit-linear-gradient(top,  #8fc400 0%,#82b200 100%);
+  background: -o-linear-gradient(top,  #8fc400 0%,#82b200 100%);
+  background: -ms-linear-gradient(top,  #8fc400 0%,#82b200 100%);
+  background: linear-gradient(to bottom,  #8fc400 0%,#82b200 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#82b200',GradientType=0 );
+  border-radius: 7px;
+  box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #709900, 0 2px 0 #709900, 0 3px 0 #709900, 0 4px 0 #709900, 0 4px 3px rgba(0,0,0,1);
+  -webkit-animation: intro 1.5s ease-in-out;
+  animation: intro 1.5s ease-in-out;
+}
+
+#button:hover {
+  margin: 4px 0 0 0;
+  box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 0 0 #709900, 0 0 0 #709900, 0 1px 0 #709900, 0 2px 0 #709900, 0 2px 2px rgba(0,0,0,1);
+}
+
+#button:active {
+  margin: 8px 0 0 0;
+  box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 0 0 #709900, 0 0 0 #709900, 0 0 0 #709900, 0 0 0 #709900, 0 0 0 rgba(0,0,0,1);
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: scale(1.3) translateY(-300px);
+    box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #709900, 0 2px 0 #709900, 0 3px 0 #709900, 0 4px 0 #709900, 0 50px 20px rgba(0,0,0,0.5);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.3) translateY(-50px);
+    box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #709900, 0 2px 0 #709900, 0 3px 0 #709900, 0 4px 0 #709900, 0 50px 20px rgba(0,0,0,0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #709900, 0 2px 0 #709900, 0 3px 0 #709900, 0 4px 0 #709900, 0 4px 3px rgba(0,0,0,0.9);
+  }
+}
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.3) translateY(-300px);
+    box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #709900, 0 2px 0 #709900, 0 3px 0 #709900, 0 4px 0 #709900, 0 50px 20px rgba(0,0,0,0.5);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: scale(1.3) translateY(-50px);
+    box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #709900, 0 2px 0 #709900, 0 3px 0 #709900, 0 4px 0 #709900, 0 50px 20px rgba(0,0,0,0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0);
+    box-shadow: 0 2px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #709900, 0 2px 0 #709900, 0 3px 0 #709900, 0 4px 0 #709900, 0 4px 3px rgba(0,0,0,0.9);
+  }
+}
