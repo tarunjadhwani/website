@@ -16,4 +16,6 @@
  *= require demo
  *= require custom
  *= require component2
+ *= require default
+ *= require component3
  */
