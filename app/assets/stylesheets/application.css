@@ -18,4 +18,6 @@
  *= require component2
  *= require default
  *= require component3
+ *= require circle
+ *= require scroll
  */

@@ -1,48 +1,105 @@
 .container.container-full.myframe
-  = render "menu"
-  %section.color-6
-    / %nav.cl-effect-3
-    %nav.cl-effect-7
-      / .new Hi,
-      / .new I'm
-      / .new Tarun
-      / .new Jadhwani,
-      / .new A
-      / .new web
-      / .new developer
-      / .new loves
-      / .new code
-      %a{:href => "#"} This
-      %a{:href => "#"} is
-      %a{:href => "#"} the
-      %a{:href => "#"} home
-      %a{:href => "#"} page
+  / = render "menu"
+  //================ circle ======================/
+
+
+  / %section.color-6
+  /   %ul.ch-grid
+  /     %li
+  /       .ch-item.ch-img-1
+  /         .ch-info
+  /           %h3 Tarun Jadhwani
+  /           %p
+  /             web developer
+  /             %a{:href => "http://drbl.in/eOPF"} View Portfolio
+  /     %nav.cl-effect-7c
+  /       .new TARUN JADHWANI, A Web Developer!
+  /       %br
+  /       %br
+  /       .now{style: "font-size: 24px; word-spacing: 5px; color:white; "} Creatively gifted and energetic person with rich experience in Ruby on Rails & front-end technologies like HTML, CSS & JavaScript. I'm based out of Mumbai, India. Creatively gifted and energetic person with rich experience in Ruby on Rails & front-end technologies like HTML, CSS & JavaScript. I'm based out of Mumbai, India.
+  /     %a{:href => "#"} This
+  /     %a{:href => "#"} is
+  /     %a{:href => "#"} the
+  /     %a{:href => "#"} home
+  /     %a{:href => "#"} page
   %section.color-5
-    %nav.cl-effect-19
-      %a{:href => "#"}
-        %span{"data-hover" => "Ratatouille"} this
-      %a{:href => "#"}
-        %span{"data-hover" => "Lassitude"} is
-      %a{:href => "#"}
-        %span{"data-hover" => "Murmurous"} the
-      %a{:href => "#"}
-        %span{"data-hover" => "Palimpsest"} about
-      %a{:href => "#"}
-        %span{"data-hover" => "Assemblage"} page
-  %section.color-8
-    %nav.cl-effect-7
-      %a{:href => "#"} this
-      %a{:href => "#"} is
-      %a{:href => "#"} the
-      %a{:href => "#"} portfolio
-      %a{:href => "#"} page
+    %ul.ch-grid
+      .col-xs-12
+        %li
+          .ch-item.ch-img-1
+            .ch-info
+              %h3 Tarun Jadhwani
+              %p
+                web developer
+                %a{:href => "http://drbl.in/eOPF"} View Portfolio
+      .clearfix
+      .space-top-1
+      %nav.cl-effect-7c
+        .col-xs-12
+          .new TARUN JADHWANI - A WEB DEVELOPER!
+        .clearfix
+        .space-top-2
+        .col-xs-offset-1.col-xs-10
+          .now{style: "font-size: 24px; word-spacing: 5px; color:white; "} Creatively gifted and energetic person with rich experience in Ruby on Rails & front-end technologies like HTML, CSS & JavaScript. I'm based out of Mumbai, India. My goal is work with passionate people, create awesome applications that people love using, to keep learning & contribute back to what is learned.
+      .clearfix
+      .space-top-3
+      .scroll-color
+        = link_to "#portfolio" do
+          %span.glyphicon.glyphicon-chevron-down
+    / %nav.cl-effect-19
+    /   %a{:href => "#"}
+    /     %span{"data-hover" => "Ratatouille"} this
+    /   %a{:href => "#"}
+    /     %span{"data-hover" => "Lassitude"} is
+    /   %a{:href => "#"}
+    /     %span{"data-hover" => "Murmurous"} the
+    /   %a{:href => "#"}
+    /     %span{"data-hover" => "Palimpsest"} about
+    /   %a{:href => "#"}
+    /     %span{"data-hover" => "Assemblage"} page
+  / #portfolio
+  /   %section.color-8
+  /     %nav.cl-effect-7
+  /       %a{:href => "#"} this
+  /       %a{:href => "#"} is
+  /       %a{:href => "#"} the
+  /       %a{:href => "#"} portfolio
+  /       %a{:href => "#"} page
   %section.color-3
     %nav.cl-effect-15
-      %a{"data-hover" => "this", :href => "#"} this
-      %a{"data-hover" => "is", :href => "#"} is
-      %a{"data-hover" => "the", :href => "#"} the
-      %a{"data-hover" => "contact", :href => "#"} contact
-      %a{"data-hover" => "page", :href => "#"} page
+      %h3.new{style: "font-size: 40px; "} Contract Page
+      .space-top-3
+      .row
+        .col-xs-offset-1.col-xs-5
+          %iframe{:frameborder => "0", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88120415!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1426339162568", :style => "border:0", :width => "100%"}
+        .col-xs-5
+          %form
+            .form-group
+              %input#exampleInputEmail1.form-control{:placeholder => "Name"}
+            .form-group
+              %input#exampleInputEmail1.form-control{:placeholder => "Enter email", :type => "email"}
+            .form-group
+              %textarea#exampleInputPassword1.form-control{:placeholder => "Message", rows: 3}
+            %button.btn.btn-default{:type => "submit"} Submit
+            / %section.button
+            /   %button.submit.disnone{:tabindex => "0"}
+            /     %span.text Send Email
+            /   .jigsaw1{:role => "button", :tabindex => "0"}
+            /   .jigsaw2
+            /   .dropzone
+
+      .space-top-3
+      .space-top-3
+      .space-top-3
+      .space-top-3
+      .space-top-3
+      .space-top-3
+      .space-top-3
+      .space-top-3
+      / %a{"data-hover" => "is", :href => "#"} is
+      / %a{"data-hover" => "the", :href => "#"} the
+      / %a{"data-hover" => "contact", :href => "#"} contact
+      / %a{"data-hover" => "page", :href => "#"} page
 /   %section.color-1
 /     %nav.cl-effect-1
 /       %a{:href => "#"} Wafture
@@ -193,6 +250,27 @@
 /       %a{:href => "#"} Mellifluous
 /       %a{:href => "#"} Serendipity
 :javascript
-  $( '#dl-menu' ).dlmenu({
-    animationClasses : { classin : 'animation-class-name', classout : 'animation-class-name' }
-  });
+  $(document).ready(function(){
+    // $('.scroll-color').mouseenter(function(){
+    //   $('.scroll-color').effect('bounce', 500)
+    // });
+    $( '#dl-menu' ).dlmenu({
+      animationClasses : { classin : 'animation-class-name', classout : 'animation-class-name' }
+    });
+
+    // ================ Soft Scrolling =================== //
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  })

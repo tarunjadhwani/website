@@ -1,0 +1,102 @@
+/*
+25Feb:
+Removed all position:absolute in order to make the styling a bit more flexible.
+
+24Feb:
+Changed hover functionality to be more meaningful (I think).
+
+19Feb:
+Using a lot of position:absolute just to prototype the idea.
+*/
+
+
+section.button {
+  width: 350px;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+.jigsaw1 {
+
+  width: 134px;
+  height: 52px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAA0CAMAAAB4pbDdAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////8AAAAQEBAgICAwMDBAQEBQUFBgYGBwcHCAgICPj4+fn5+vr6+/v7/Pz8/f39/v7+/////ZChnYAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAAU1JREFUeNrt1smOhCAQgOEScRkGBZSmcUF4/6ecMTFhJr2dxDrw38rTpzFQ8KqCnl4Jn6N+PTsvGP3IWOXpjZPn5DpGTE2iupARM6HGwJBGlBgY0nYoGNLVKBi3HgVDbiUKxtyiYJhvFAzNMyMz3jFK1ofuuyHXMmpvR6nNEngFsSoxg4TxuPvvWx9P968pLYPZOJutP75I0eu0DDFI+RfC6c5gq0zKKLc4HpCuqblTSRnPfkUzL3cl0zJaK5+WGZnRLA9PldZDYsbj3THMvuNhSswogvqPCIwAkM6mZQA3cVbW/yL2SBjSMqpNHdMw7Ygjdk/LAOb2F1dmCREBUC+JGdAKt7rAm+LqJZBSmnfRzMiMl91wMGyLguEqDIxBFBgYMwMEDC0IAobyDVzPUI7B9QztGVzOGGdRw3uG0ydnp020Bbyv5GfH2rjk/ABjZXcnvEVC0AAAAABJRU5ErkJggg==) no-repeat;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  z-index: 50;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.jigsaw2 {
+  width: 110px;
+  height: 52px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAAA0CAMAAABckP1YAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////8AAAAQEBAgICAwMDBAQEBQUFBgYGBwcHCAgICPj4+fn5+vr6+/v7/Pz8/f39/v7+/////ZChnYAAAAEHRSTlMAECAwQFBgcICPn6+/z9/vIxqCigAAATtJREFUeNrt1styhCAQQNEGGcQXgq9RROH/vzJaM6MVK9vuVFLeJZtTvWkazrhAjx9WpqPHblUvjGXR9Qa98cUllW+MoeKS2hlDxrHKGUIu84aQ46Gh5PLJUHJ1Q8mJ1VByqSPl1HhzN/ebXD+H6N1gaTinJWciraJrCbhBs8+RUPvueF4eONwq4BNTtX9P2NYMhWs17J2g2/eyXRSgcM8c4ALOw3PNAYebFFxiaZFLQOK8gJ+6uT/AzSlc40IwLG5UF0wU0S+1ROL66jtWhtEa04UHDmcDPzGeb9h7k+JwZiqOyQ5sa01wOLvkbB8srU5sy2H9d9bFstRhHqiOB9t17X0a/S9uIuWEJ+VYtJQclAMpJ1dSDqqRlEtiR8mBDC0lBzI+KTlItO/puC2pgxv7Djen4ChJsxI7+QUddlLIFPIPQAAAAABJRU5ErkJggg==) no-repeat;
+  z-index: 20;
+  opacity: 0.5;
+    -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.jigsaw1:hover, .jigsaw1:hover ~ .jigsaw2 {
+  opacity: 1 !important;
+}
+
+.jigsaw1:focus, .jigsaw1:focus ~ .jigsaw2 {
+  opacity: 1 !important;
+}
+
+.dropzone {
+  width: 134px;
+  height: 52px;
+  float: right;
+  position: relative;
+  top: -52px;
+  left: -132px;
+  z-index: 0;
+  /*background: rgba(0,0,0,0.1);*/
+}
+
+.submit {
+  width: 217px;
+  height: 52px;
+  -webkit-border-radius: 1.2em !important;
+  -moz-border-radius: 1.2em !important;
+  border-radius: 1.2em !important;
+  text-shadow:none !important;
+  border:none !important;
+  box-shadow:none !important;
+  background: #00e600;
+  z-index: 0;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.submit span {
+  font-size: 1.5em;
+}
+
+.disnone {
+  display:none;
+}
+
+.pulse {
+  -webkit-animation-name: 'pulse_animation';
+  -webkit-animation-duration: 1000ms;
+  -webkit-transform-origin:70% 70%;
+  -webkit-animation-timing-function: linear;
+
+}
+@-webkit-keyframes pulse_animation {
+  0% { -webkit-transform: scale(1); }
+  40% { -webkit-transform: scale(1.08); }
+  50% { -webkit-transform: scale(1); }
+  60% { -webkit-transform: scale(1); }
+  70% { -webkit-transform: scale(1.05); }
+  80% { -webkit-transform: scale(1); }
+  100% { -webkit-transform: scale(1); }
+}
