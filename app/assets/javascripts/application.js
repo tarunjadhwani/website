@@ -10,13 +10,13 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require modernizr.custom
 //= require jquery
 //= require jquery_ujs
+//= require modernizr.custom
+//= require grid
 //= require turbolinks
 //= require modernizr
 //= require bootstrap
 //= require modernizr2
 //= require dlmenu
-//= require grid
 //= require custom

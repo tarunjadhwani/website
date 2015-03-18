@@ -22,77 +22,202 @@
   /     %a{:href => "#"} the
   /     %a{:href => "#"} home
   /     %a{:href => "#"} page
-  %section.color-5
-    %ul.ch-grid
-      .col-xs-12
-        %li
-          .ch-item.ch-img-1
-            .ch-info
-              %h3 Tarun Jadhwani
-              %p
-                web developer
-                %a{:href => "http://drbl.in/eOPF"} View Portfolio
-      .clearfix
-      .space-top-1
-      %nav.cl-effect-7c
+  %section.color-2
+    #home
+      %ul.ch-grid
         .col-xs-12
-          .new TARUN JADHWANI - A WEB DEVELOPER!
+          %li
+            .ch-item.ch-img-1
+              .ch-info
+                %h3 Tarun Jadhwani
+                %p
+                  web developer
+                  %a{:href => "#portfolio"} View Portfolio
         .clearfix
-        .space-top-2
-        .col-xs-offset-1.col-xs-10
-          .now{style: "font-size: 24px; word-spacing: 5px; color:white; "} Creatively gifted and energetic person with rich experience in Ruby on Rails & front-end technologies like HTML, CSS & JavaScript. I'm based out of Mumbai, India. My goal is work with passionate people, create awesome applications that people love using, to keep learning & contribute back to what is learned.
-      .clearfix
+        .space-top-1
+        %nav.cl-effect-7c
+          .col-xs-12
+            .new{style: "font-size: 26px;"} TARUN JADHWANI
+            %br
+            %i.new{style: "font-size:16px; word-spacing: 2px; font-weight: 100"} Full Stack Web Developer
+          .clearfix
+          .space-top-2
+          .col-xs-offset-1.col-xs-10
+            .now{style: "font-size: 20px; word-spacing: 5px; color:white; padding-bottom: 1em;"} Creatively gifted and energetic person with rich experience in agile web framework (Rails 3.x, 4.x), front end technologies (HTML, CSS, JavaScript), cloud computing (AWS, Heroku) and source code management (Git & Bitbucket)
+
+          / .now{style: "font-size: 22px; word-spacing: 5px; color:white; padding-bottom: 1em;"} Creatively gifted and energetic person with rich experience in Ruby on Rails & front-end technologies like HTML, CSS & JavaScript. I'm based out of Mumbai, India. My goal is to work with passionate people and create web applications that people love using. Also to keep learning & contributing back to the society.
+        .clearfix
+        .space-top-3
+        .scroll-color
+          = link_to "#portfolio" do
+            %span.glyphicon.glyphicon-chevron-down
+  #portfolio
+    %section.color-8
+      %ul#og-grid.og-grid
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+        %li
+          %a{"data-description" => "Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.", "data-largesrc" => "assets/2.jpg", "data-title" => "Veggies sunt bona vobis", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img02", :src => "assets/thumbs/2.jpg"}/
+        %li
+          %a{"data-description" => "Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.", "data-largesrc" => "assets/3.jpg", "data-title" => "Dandelion horseradish", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img03", :src => "assets/thumbs/3.jpg"}/
+        %li
+          %a{"data-description" => "Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.", "data-largesrc" => "assets/1.jpg", "data-title" => "Azuki bean", :href => "http://cargocollective.com/jaimemartinez/"}
+            %img{:alt => "img01", :src => "assets/thumbs/1.jpg"}/
+
+  #contact
+    %section.color-3
+      .asdlf
+        .space-top-3
+        .col-xs-offset-4
+          %h3.new{style: "font-size: 40px;"} Contact Page
+        .space-top-3
+        .row
+          .col-xs-offset-1.col-xs-5
+            %iframe{:frameborder => "0", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88120415!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1426339162568", :style => "border:0", :width => "100%"}
+          .col-xs-5
+            %form
+              .form-group
+                %input#exampleInputEmail1.form-control{:placeholder => "Name"}
+              .form-group
+                %input#exampleInputEmail1.form-control{:placeholder => "Enter email", :type => "email"}
+              .form-group
+                %textarea#exampleInputPassword1.form-control{:placeholder => "Message", rows: 3}
+              %button.btn.btn-default{:type => "submit"} Submit
+          .clearfix
       .space-top-3
-      .scroll-color
-        = link_to "#portfolio" do
-          %span.glyphicon.glyphicon-chevron-down
-    / %nav.cl-effect-19
-    /   %a{:href => "#"}
-    /     %span{"data-hover" => "Ratatouille"} this
-    /   %a{:href => "#"}
-    /     %span{"data-hover" => "Lassitude"} is
-    /   %a{:href => "#"}
-    /     %span{"data-hover" => "Murmurous"} the
-    /   %a{:href => "#"}
-    /     %span{"data-hover" => "Palimpsest"} about
-    /   %a{:href => "#"}
-    /     %span{"data-hover" => "Assemblage"} page
-  / #portfolio
-  /   %section.color-8
-  /     %nav.cl-effect-7
-  /       %a{:href => "#"} this
-  /       %a{:href => "#"} is
-  /       %a{:href => "#"} the
-  /       %a{:href => "#"} portfolio
-  /       %a{:href => "#"} page
-  %section.color-3
-    %nav.cl-effect-15
-      %h3.new{style: "font-size: 40px; "} Contract Page
       .space-top-3
-      .row
-        .col-xs-offset-1.col-xs-5
-          %iframe{:frameborder => "0", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88120415!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1426339162568", :style => "border:0", :width => "100%"}
-        .col-xs-5
-          %form
-            .form-group
-              %input#exampleInputEmail1.form-control{:placeholder => "Name"}
-            .form-group
-              %input#exampleInputEmail1.form-control{:placeholder => "Enter email", :type => "email"}
-            .form-group
-              %textarea#exampleInputPassword1.form-control{:placeholder => "Message", rows: 3}
-            %button.btn.btn-default{:type => "submit"} Submit
-            / %section.button
-            /   %button.submit.disnone{:tabindex => "0"}
-            /     %span.text Send Email
-            /   .jigsaw1{:role => "button", :tabindex => "0"}
-            /   .jigsaw2
-            /   .dropzone
+        .row
+          .col-xs-offset-4.col-xs-8
+            %a.share-btn.twitter{:href => "http://twitter.com/jeremylindstrom", :target => "_blank"}
+              %i.fa.fa-twitter
+            / Github
+            %a.share-btn.github{:href => "http://www.github.com/dekard", :target => "_blank"}
+              %i.fa.fa-github
+            / dribbble
+            %a.share-btn.dribbble{:_blank => "", :href => "http://www.dribbble.com/jeremylindstrom target="}
+              %i.fa.fa-dribbble
+            / LinkedIn
+            %a.share-btn.linkedin{:href => "http://www.linkedin.com/in/jeremylindstrom", :target => "_blank"}
+              %i.fa.fa-linkedin
+            / Email
+            %a.share-btn.email{:_blank => "", :href => "mailto:jeremy@jeremylindstrom.com target="}
+              %i.fa.fa-envelope
 
       .space-top-3
-      .space-top-3
-      .space-top-3
-      .space-top-3
-      .space-top-3
+        .scroll-color{style: 'text-align:center;'}
+          = link_to "#home" do
+            %span.glyphicon.glyphicon-chevron-up
       .space-top-3
       .space-top-3
       .space-top-3
@@ -249,6 +374,11 @@
 /       %a{:href => "#"} Efficiency
 /       %a{:href => "#"} Mellifluous
 /       %a{:href => "#"} Serendipity
+%script{:src => "assets/grid.js"}
+:javascript
+  $(function() {
+    Grid.init();
+  });
 :javascript
   $(document).ready(function(){
     // $('.scroll-color').mouseenter(function(){
